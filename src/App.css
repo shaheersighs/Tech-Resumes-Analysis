@@ -1,0 +1,246 @@
+/* === Global Styles === */
+body {
+  font-family: Arial, sans-serif;
+  background: #f1efe9;
+  background-image: radial-gradient(#d4c49e 1.0px, transparent 1.0px);
+  background-size: 29px 29px;
+  margin: 0;
+  padding: 0;
+}
+
+/* === Main Heading === */
+.main-heading {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.heading-text-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.heading-content {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.main-heading h1 {
+  font-size: 45px;
+  color: #333;
+  margin: 0;
+  text-align: left;
+}
+
+.tagline {
+  font-size: 16px;
+  color: #666;
+  font-style: italic;
+  text-align: right;
+  width: 100%;
+  margin-top: 5px;
+}
+
+.logo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* === Section Wrapper === */
+.section {
+  margin-bottom: 60px;
+}
+
+/* === Job Description Section === */
+.input-container {
+  width: 80%;
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.input-label {
+  font-weight: lighter;
+  font-size: 16px;
+  color: #333;
+  text-align: left;
+}
+
+.job-description-box {
+  width: 100%;
+}
+
+textarea {
+  width: 100%;
+  height: 200px;
+  resize: vertical;
+  padding: 12px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  background-color: #fffdf3;
+  font-family: 'Georgia', serif;
+}
+
+.btn {
+  padding: 8px 16px;
+  font-size: 14px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #dccbac;
+  color: #333;
+  width: fit-content;
+  align-self: flex-start;
+}
+
+.btn:hover {
+  background-color: #c6a85f;
+  opacity: 0.95;
+}
+
+.btn.secondary {
+  background-color: #dccbac;
+}
+
+.btn.secondary:hover {
+  background-color: #c6a85f;
+}
+
+/* === Resume Upload Section === */
+.upload-container {
+  width: 80%;
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.upload-box-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 5px;
+}
+
+.input-label {
+  font-size: 18px;
+  font-weight: lighter;
+  color: #333;
+  margin-bottom: 5px;
+  letter-spacing: 0.5px;
+}
+
+.upload-box {
+  width: 100%;
+  height: 50px;
+  padding: 10px;
+  border: 1px dashed #ccc;
+  border-radius: 5px;
+  background-color: #fffdf3;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  color: #333;
+}
+
+/* === Results Section === */
+.results-container {
+  width: 80%;
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.results-container h2 {
+  font-size: 18px;
+  font-weight: lighter;
+  color: #333;
+  margin: 0 0 10px 0;
+}
+
+.resume-table {
+  width: 102.5%;
+  border-collapse: collapse;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  box-sizing: border-box;
+}
+
+.resume-table th,
+.resume-table td {
+  background-color: #fffdf3;
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+  font-size: 14px;
+}
+
+.resume-table th {
+  background-color: #dccbac;
+  color: #333;
+}
+
+.resume-table tr:nth-child(even) {
+  background-color: #fffdf3;
+}
+
+/* === Footer === */
+.footer {
+  padding: 30px 0 50px 0;
+  background-color: #f1efe9;
+  background-image: radial-gradient(#d4c49e 1.0px, transparent 1.0px);
+  background-size: 29px 29px;
+  text-align: center;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  margin-top: 15px;
+}
+
+/* Hover effect for all footer icons */
+.footer-content a:hover img {
+  transform: scale(1.1);
+  transition: transform 0.2s ease-in-out;
+}
+
+
+/* Logo Circle */
+.logo-circle {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.logo-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+/* Social Icons */
+.icon {
+  width: 45px;
+  height: 45px;
+  object-fit: contain;
+}
