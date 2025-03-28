@@ -1,70 +1,101 @@
-# Getting Started with Create React App
+# Tech Resumes Analysis System
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+An AI-powered Resume Screening Tool designed to analyze, extract, and rank IT resumes based on a given job description. This intelligent web application leverages state-of-the-art Natural Language Processing (NLP) techniques to assist recruiters in shortlisting the most relevant candidates efficiently. Deployed live at https://techresumeanalyzer.netlify.app/
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## Key Features
 
-### `npm start`
+- **AI-Driven Resume Ranking** — Ranks resumes based on skill match, work experience, and education alignment.
+- **Resume Upload** — Supports PDF resume uploads.
+- **Job Description Input** — Accepts job description text for context-aware ranking.
+- **NLP-Powered Extraction** — Uses `spaCy`, `TF-IDF`, and BERT-based models for extracting:
+  - Technical skills
+  - Years of experience
+  - Academic qualifications
+- **Ranked Output Display** — Clean, sortable table displaying scores and matches.
+- **Real-Time Results** — Instant feedback from backend processing.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Tech Stack
 
-### `npm test`
+| Category     | Technologies Used                              |
+|--------------|------------------------------------------------|
+| Frontend     | React.js, HTML5, CSS3                          |
+| Backend      | Flask (Python)                                 |
+| NLP / ML     | spaCy, scikit-learn (TF-IDF), SentenceTransformers (BERT) |
+| File Parsing | PyMuPDF (for PDF parsing)                      |
+| Deployment   | Netlify (Frontend), Render/AWS/Railway (API)   |
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
+## Usage Instructions
 
-### `npm run build`
+1. Paste the **job description** in the input field.
+2. Upload one or more **PDF resumes**.
+3. Click **Analyze** to view ranked results.
+4. Review rankings in the generated table.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Core Functionality
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Skill Matching
+- Extracts keywords using **TF-IDF**
+- Filters using **spaCy Named Entity Recognition (NER)**
 
-### `npm run eject`
+### Experience Detection
+- Extracts **dates** and **job titles**
+- Calculates **years of experience** using heuristic matching
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Education Parsing
+- Identifies **degrees** and **institutions** using regex and keyword patterns
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Semantic Scoring
+- Uses **SentenceTransformer** to compare job/resume embeddings
+- Final score = **weighted average** of all metrics
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+---
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Sample Output
 
-## Learn More
+| Candidate Name | Skills Match | Experience (Years) | Education Match | Total Score |
+|----------------|--------------|--------------------|------------------|-------------|
+| John Doe       | 85%          | 4.5                |   Bachelor’s     | 82.3        |
+| Jane Smith     | 92%          | 6.0                |   Master’s       | 89.5        |
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+---
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Roadmap
 
-### Code Splitting
+- [ ] DOCX resume support
+- [ ] Drag-and-drop file upload
+- [ ] Chart-based ranking visualization
+- [ ] Enhanced error handling
+- [ ] Dockerized deployment
+- [ ] Resume feedback generator
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+---
 
-### Analyzing the Bundle Size
+## About
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+This project was developed as part of the **Emerging Trends in Data Technology** course by:
 
-### Making a Progressive Web App
+**Shaheer**  
+Final Year IT Student | Data Engineer
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+---
 
-### Advanced Configuration
+## License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+This project is licensed under the **MIT License**.
 
-### Deployment
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## Acknowledgements
 
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- [spaCy](https://spacy.io/)
+- [scikit-learn](https://scikit-learn.org/)
+- [SentenceTransformers](https://www.sbert.net/)
+- [React](https://reactjs.org/)
+- [Flask](https://flask.palletsprojects.com/)
