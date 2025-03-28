@@ -1,6 +1,6 @@
 # Tech Resumes Analysis System
 
-An AI-powered Resume Screening Tool designed to analyze, extract, and rank IT resumes based on a given job description. This intelligent web application leverages state-of-the-art Natural Language Processing (NLP) techniques to assist recruiters in shortlisting the most relevant candidates efficiently. Deployed live at https://techresumeanalyzer.netlify.app/
+An AI-powered Resume Screening Tool designed to analyze, extract, and rank IT resumes based on a given job description. This intelligent web application leverages state-of-the-art Natural Language Processing (NLP) techniques to assist recruiters in shortlisting the most relevant candidates efficiently. Deployed live at (https://techresumeanalysis.netlify.app)
 
 ---
 
